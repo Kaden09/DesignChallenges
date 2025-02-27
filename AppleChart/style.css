@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "London";
+  src: url("./london font.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 50px;
+  padding: 30px;
+  background: linear-gradient(to top right, #040404, #3c3c3c);
+}
+
+.header {
+  font-family: "London";
+  letter-spacing: 2px;
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+}
+
+.abbreviature {
+  color: #a6a6a6;
+  animation: fadeIn 0.5s;
+}
+
+.title {
+  font-size: 18px;
+  color: #555;
+}
+
+.increase {
+  font-size: 20px;
+  color: #a6a6a6;
+}
+
+.price {
+  font-family: "London";
+  letter-spacing: 4px;
+  font-size: 50px;
+  color: #00c853;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.circle {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
