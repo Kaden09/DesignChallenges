@@ -1,0 +1,47 @@
+:root[data-theme="light"] {
+  --icon-color: #fec124;
+  --background-color: #fefefe;
+  --secondary-background-color: #f3f2f8;
+}
+
+:root[data-theme="dark"] {
+  --icon-color: #f4f3f9;
+  --background-color: #17171f;
+  --secondary-background-color: #22222c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--background-color);
+}
+
+#theme-icon {
+  background: var(--secondary-background-color);
+  border-radius: 30px;
+}
+
+#theme-icon:active {
+    transform: scale(0.98);
+}
+
+#circle {
+    fill: var(--icon-color);
+}
+
+#sun-rays {
+  transform: scale(0);
+}
+
+.ray {
+    fill: var(--icon-color);
+}

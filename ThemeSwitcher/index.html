@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page title</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <svg id="theme-icon" width="200" height="200" viewBox="40 40 120 120">
+      <mask id="circle-mask">
+        <rect width="200" height="200" fill="#fff"></rect>
+        <circle id="mask" cx="117" cy="80" r="25" fill="#000"></circle>
+      </mask>
+      <circle
+        id="circle"
+        cx="100"
+        cy="100"
+        r="30"
+        mask="url(#circle-mask)"
+      ></circle>
+      <g id="sun-rays" transform-origin="100 100">
+        <circle class="ray" cx="100" cy="75" r="5" />
+        <circle class="ray" cx="118" cy="82" r="5" />
+        <circle class="ray" cx="125" cy="100" r="5" />
+        <circle class="ray" cx="118" cy="117" r="5" />
+        <circle class="ray" cx="100" cy="125" r="5" />
+        <circle class="ray" cx="82" cy="117" r="5" />
+        <circle class="ray" cx="75" cy="100" r="5" />
+        <circle class="ray" cx="82" cy="82" r="5" />
+      </g>
+    </svg>
+  </body>
+  <script src="index.js"></script>
+</html>
