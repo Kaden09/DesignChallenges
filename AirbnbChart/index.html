@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Favourite Stock</h2>
+        <div class="chart">
+            <svg width="270" height="115">
+  <defs>
+      <linearGradient id="myGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+        <stop offset="30%" style="stop-color:transparent; stop-opacity:1">
+          <animate
+            attributeName="stop-opacity"
+            from="0"
+            to="1"
+            dur="4s"
+            fill="freeze"
+          />
+        </stop>
+        <stop offset="90%" style="stop-color:#00C853; stop-opacity:0.1">
+          <animate
+            attributeName="stop-opacity"
+            from="0"
+            to="0.1"
+            dur="4s"
+            fill="freeze"
+          />
+        </stop>
+      </linearGradient>
+    <mask id="mask-path">
+      <rect width="100%" height="100%" fill="#ffffff50"/>
+      <path d="M 0 115 L 25 95 L 35 105 L 60 75 L 60 65 L 70 55 L 70 45 L 80 35 L 90 45 L 90 65 L 95 55 L 105 75 L 105 85 L 110 90 L 120 105 L 125 100 L 131 106 L 131 85 L 140 95 L 160 65 L 160 55 L 175 40 L 185 50 L 185 55 L 190 60 L 200 60 L 215 45 L 215 40 L 220 35 L 225 40 L 230 35 L 235 15 L 240 25 L 260 5 L 265 5 L 270 0 L 280 0 L 280 115" fill="white" />
+    </mask>
+  </defs>
+  
+  <path d="M 0 115 L 25 95 L 35 105 L 60 75 L 60 65 L 70 55 L 70 45 L 80 35 L 90 45 L 90 65 L 95 55 L 105 75 L 105 85 L 110 90 L 120 105 L 125 100 L 131 106 L 131 85 L 140 95 L 160 65 L 160 55 L 175 40 L 185 50 L 185 55 L 190 60 L 200 60 L 215 45 L 215 40 L 220 35 L 225 40 L 230 35 L 235 15 L 240 25 L 260 5 L 265 5 L 270 0 L 280 0 L 280 115" stroke="#00C853" stroke-width="2" fill="url(#myGradient)"
+  id="line"
+/>
+  
+              <g id="points" fill="black" mask="url(#mask-path)"></g>
+            </svg>
+        </div>
+        <div class="info">
+            <div class="currency-info">
+               
+                 <img src="./Airbnb.svg" class="airbnb-logo">
+                 <div class="title-wrapper">
+                    <h2 class="currency">Airbnb, Inc</h2>
+                    <h2 class="abbreviation">ABNB</h2>
+                </div>
+            </div>
+            <div class="price-info">
+                <h2 class="price">115,6 $</h2>
+                <h2 class="price-increase">0.49%</h2>
+            </div>
+        </div>
+        <div class="swiper">
+            <div class="point"></div>
+            <div class="point selected"></div>
+            <div class="point"></div>
+            <div class="point"></div>
+        </div>
+    </div>
+    
+</body>
+<script src="index.js"></script> 
+</html>

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+    font-family: "Inter", serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background: #fff;
+    border-radius: 50px;
+    padding: 30px;
+    animation: fadeIn 0.8s;
+}
+
+.chart {
+    animation: fadeIn 2s;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    animation: fadeIn 2s;
+}
+
+.currency-info {
+    display: flex;
+    gap: 10px;
+}
+
+
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.airbnb-logo {
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background: #ff385c;
+}
+
+.currency {
+    font-size: 22px;
+}
+
+.abbreviation {
+    font-size: 16px;
+    color: #909090;
+}
+
+.price-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 5px;
+}
+
+.price {
+    font-size: 22px;
+}
+
+.price-increase {
+    font-size: 16px;
+    color: #00C853;
+}
+
+.swiper {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.point {
+    width: 5px;
+    height: 5px;
+    border-radius: 3px;
+    background: #e3e3e3;
+}
+
+.selected {
+    background: #909090;
+}
+
+#line {
+    stroke-dasharray: 800; 
+    stroke-dashoffset: 800;
+    animation: draw 3s linear forwards; 
+ }
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes draw {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
