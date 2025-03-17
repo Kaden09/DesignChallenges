@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="charging">
+                <img src="./Lightning.svg" alt="Lightning">
+                <h2 class="charging-title">
+                    Charging
+                    <span id="first-point">.</span>
+                    <span id="second-point">.</span>
+                    <span id="third-point">.</span>
+                </h2>
+               
+            </div>
+            <div class="progress">
+                <h2 id="percents"></h2>
+                <img src="./Point.svg" alt="Point">
+                <h2 class="minutes">22 min left</h2>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="progress-marks">
+                <span>0</span>
+                <span>50</span>
+                <span>100</span>
+            </div>
+            <div class="progressbar">
+                <div class="energy"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
