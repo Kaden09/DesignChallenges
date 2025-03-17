@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #4d4e50;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px 30px 30px;
+    border-radius: 30px;
+    background: linear-gradient(to top right, #191a1c, #324338);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #666;
+    animation: fadeIn 1s;
+}
+
+.payments-info {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    animation: fadeIn 1s;
+}
+
+.total-payments {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.pennies {
+    color: #666;
+}
+
+.percents {
+    display: flex;
+    gap: 5px;
+    padding: 3px 10px;
+    border: 1px solid #0cde73;
+    border-radius: 20px;
+    margin-bottom: 7px;
+}
+
+.percents-value {
+    font-size: 12px;
+    font-weight: 400;
+    color: #0cde73;
+}
+
+.column {
+    animation: fadeIn 0.4s;
+    transition: all 0.4s;
+}
+
+.dates {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #666;
+    animation: fadeIn 1s;
+}
+
+#chart {
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
